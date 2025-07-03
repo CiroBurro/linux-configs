@@ -26,7 +26,7 @@ chmod +x strap.sh
 sudo ./strap.sh
 
 #configuro la shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #configuro nvim
 cd ~/.config
