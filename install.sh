@@ -26,12 +26,6 @@ sudo ./strap.sh
 chsh -s /usr/bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-cat << 'EOF' >> ~/.zshrc
-if uwsm check may-start && uwsm select; then
-    exec uwsm start default
-fi
-EOF
-
 #configuro nvim
 [ -d "$HOME/.config/nvim" ] && mv "$HOME/.config/nvim" "$HOME/.config/nvim.bak_$(date +%s)"
 git clone https://github.com/CiroBurro/nvim.git "$HOME/.config/nvim"
